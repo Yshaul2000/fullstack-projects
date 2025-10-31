@@ -79,3 +79,20 @@ footer {
   margin: 10px;
   background-color: white;
 }
+
+.rhythm-button {
+  background-color: #DA0463;
+  color: #DBEDF3;
+  border: 3px solid #404B69;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: 'Arvo', cursive;
+  padding: 15px 30px;
+  margin: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.rhythm-button:hover {
+  background-color: #ff0066;
+}

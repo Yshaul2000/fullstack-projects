@@ -59,3 +59,23 @@ function buttonAnimation(currentKey) {
     }, 100);
 }
 
+// Play Rhythm functionality
+document.getElementById("playRhythm").addEventListener("click", playRhythm);
+
+function playRhythm() {
+    // Simple rhythm pattern: kick, snare, kick, snare
+    var rhythm = [
+        { key: "l", delay: 0 },      // kick
+        { key: "j", delay: 500 },    // snare
+        { key: "l", delay: 1000 },   // kick
+        { key: "j", delay: 1500 }    // snare
+    ];
+    
+    rhythm.forEach(function(beat) {
+        setTimeout(function() {
+            makeSound(beat.key);
+            buttonAnimation(beat.key);
+        }, beat.delay);
+    });
+}
+
