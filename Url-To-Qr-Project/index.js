@@ -4,13 +4,14 @@ import fs from 'fs';
 
 inquirer
   .prompt([
+    // Get user URL input
     {
         message: "Enter the URL to generate QR code:",
         name: "URL"
     }
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+   // Extract user input
     const userInput = answers.URL;
 
     // Generate QR code
